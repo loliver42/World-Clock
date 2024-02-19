@@ -9,14 +9,23 @@ function updateTime() {
       "h:mm:ss [<small>] A [</small>]"
     );
   }
-
-  let phillyElement = document.querySelector("#philly");
-  if (phillyElement) {
-    let phillyDateElement = phillyElement.querySelector(".date");
-    let phillyTimeElement = phillyElement.querySelector(".time");
-    let phillyTime = moment().tz("America/Philadelphia");
-    phillyDateElement.innerHTML = phillyTime.format("MMMM Do YYYY");
-    phillyTimeElement.innerHTML = phillyTime.format(
+  let fijiElement = document.querySelector("#fiji");
+  if (fijiElement) {
+    let fijiDateElement = fijiElement.querySelector(".date");
+    let fijiTimeElement = fijiElement.querySelector(".time");
+    let fijiTime = moment().tz("Pacific/Fiji");
+    fijiDateElement.innerHTML = fijiTime.format("MMMM Do YYYY");
+    fijiTimeElement.innerHTML = fijiTime.format(
+      "h:mm:ss [<small>] A [</small>]"
+    );
+  }
+  let londonElement = document.querySelector("#london");
+  if (londonElement) {
+    let londonDateElement = londonElement.querySelector(".date");
+    let londonTimeElement = londonElement.querySelector(".time");
+    let londonTime = moment().tz("Europe/London");
+    londonDateElement.innerHTML = londonTime.format("MMMM Do YYYY");
+    londonTimeElement.innerHTML = londonTime.format(
       "h:mm:ss [<small>] A [</small>]"
     );
   }
