@@ -11,27 +11,29 @@
   <body>
     <div class="container">
       <h1>World Clock</h1>
-      <select>
+      <select id="city">
         <option value="">Select a city..</option>
         <option value="">Current Location</option>
-        <option value="">Trenton</option>
-        <option value="">Philadelphia</option>
-        <option value="">Carneys Point</option>
+        <option value="America/Trenton">Trenton</option>
+        <option value="America/Philadelphia">Philadelphia</option>
+        <option value="Europe/London">London</option>
       </select>
 
-      <div class="city" id="trenton">
-        <div>
-          <h2>Trenton</h2>
-          <div class="date"></div>
+      <div id="cities">
+        <div class="city" id="trenton">
+          <div>
+            <h2>Trenton</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
-      <div class="city" id="philly">
-        <div>
-          <h2>Philadelphia</h2>
-          <div class="date"></div>
+        <div class="city" id="philly">
+          <div>
+            <h2>Philadelphia</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
       </div>
     </div>
 
